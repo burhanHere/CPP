@@ -1,0 +1,15 @@
+$(document).ready(function(){
+    /* display solution on question click */
+
+    $('.ans').addClass('hidden-result');
+    $('.hide_div').click(function(event){
+        var result = $(this).find('.ans');
+        if(result.hasClass('hidden-result')) {
+            result.removeClass('hidden-result');
+        }
+        else {
+            result.addClass('hidden-result');
+        } 
+    });
+
+}); // end of js body

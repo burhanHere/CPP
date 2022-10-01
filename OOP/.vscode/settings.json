@@ -1,0 +1,17 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "xstring": "cpp",
+        "ostream": "cpp"
+    },
+    "spellright.language": [
+        "en",
+        "ur"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext",
+        "cpp"
+    ]
+}

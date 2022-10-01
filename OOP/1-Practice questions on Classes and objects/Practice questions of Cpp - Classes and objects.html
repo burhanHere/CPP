@@ -1,0 +1,1883 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)https://www.codesdope.com/practice/cpp-classes-and-objects/ -->
+<html itemscope="" itemtype="http://schema.org/WebPage" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.codesdope.com/staticroot/images/logo.ico">
+  <title>
+ Practice questions of Cpp - Classes and objects
+</title>
+  
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="Cpp Classes and objects practice problem question Beginner Code Learn Scratch Discuss Ask Doubt Question Language Simple Programming Program Coding Practice Problems">
+<meta name="description" content="Solve question related to Cpp - Classes and objects">
+
+
+<!--
+Font
+-->
+<link href="./Practice questions of Cpp - Classes and objects_files/css" rel="stylesheet" type="text/css">
+<link href="./Practice questions of Cpp - Classes and objects_files/css(1)" rel="stylesheet" type="text/css">
+
+
+
+
+<link rel="preload" href="https://www.codesdope.com/staticroot/css/main_center.css" as="style">
+<link rel="stylesheet" type="text/css" href="./Practice questions of Cpp - Classes and objects_files/pygments-colorful.css">
+
+ <link rel="stylesheet" type="text/css" href="./Practice questions of Cpp - Classes and objects_files/normal_base.css">
+
+ 
+<link rel="stylesheet" href="./Practice questions of Cpp - Classes and objects_files/bootstrap.min.css" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;">
+<noscript><link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"></noscript>
+
+<link rel="stylesheet" href="./Practice questions of Cpp - Classes and objects_files/jquery-ui.css" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;">
+<noscript><link rel='stylesheet' type='text/css' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css' /></noscript>
+
+<link rel="stylesheet" href="./Practice questions of Cpp - Classes and objects_files/font-awesome.min.css" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;">
+<noscript><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"></noscript>
+
+
+<script src="./Practice questions of Cpp - Classes and objects_files/f.txt"></script><script async="" src="./Practice questions of Cpp - Classes and objects_files/qevents.js.download"></script><script src="./Practice questions of Cpp - Classes and objects_files/719565291712594" async=""></script><script async="" src="./Practice questions of Cpp - Classes and objects_files/fbevents.js.download"></script><script async="" src="./Practice questions of Cpp - Classes and objects_files/analytics.js.download"></script><script src="./Practice questions of Cpp - Classes and objects_files/f(1).txt"></script><script src="./Practice questions of Cpp - Classes and objects_files/f(2).txt" id="google_shimpl"></script><script type="text/javascript" async="" src="./Practice questions of Cpp - Classes and objects_files/recaptcha__en.js.download" crossorigin="anonymous" integrity="sha384-vSvEygU4Vy/dw8ibjqPbIvSyyi53fYweNLkuW0i4f+CRq7c9xaGZF/VsRcqV17DR"></script><script src="./Practice questions of Cpp - Classes and objects_files/api.js.download" async="" defer=""></script>
+
+
+<link href="./Practice questions of Cpp - Classes and objects_files/css(2)" rel="stylesheet" type="text/css">
+<link href="./Practice questions of Cpp - Classes and objects_files/css(3)" rel="stylesheet" type="text/css">
+<link href="./Practice questions of Cpp - Classes and objects_files/css(4)" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="./Practice questions of Cpp - Classes and objects_files/topic_questions.css">
+
+
+
+
+<meta http-equiv="origin-trial" content="A+cA2PUOfIOKAdSDJOW5CP9ZlxONy1yu+hqAq72zUtKw4rLdihqRp6Nui/jUyCyegr+BUtH+C+Elv0ufn05yBQEAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A+zsdH3aNZT/bkjT8U/o5ACzyaeNYzTvtoVmwf/KOilfv39pxY2AIsOwhQJv+YnXp98i3TqrQibIVtMWs5UHjgoAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="AxceVEhIegcDEHqLXFQ2+vPKqzCppoJYsRCZ/BdfVnbM/sUUF2BXV8lwNosyYjvoxnTh2FC8cOlAnA5uULr/zAUAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A+cA2PUOfIOKAdSDJOW5CP9ZlxONy1yu+hqAq72zUtKw4rLdihqRp6Nui/jUyCyegr+BUtH+C+Elv0ufn05yBQEAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A+zsdH3aNZT/bkjT8U/o5ACzyaeNYzTvtoVmwf/KOilfv39pxY2AIsOwhQJv+YnXp98i3TqrQibIVtMWs5UHjgoAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="AxceVEhIegcDEHqLXFQ2+vPKqzCppoJYsRCZ/BdfVnbM/sUUF2BXV8lwNosyYjvoxnTh2FC8cOlAnA5uULr/zAUAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A+cA2PUOfIOKAdSDJOW5CP9ZlxONy1yu+hqAq72zUtKw4rLdihqRp6Nui/jUyCyegr+BUtH+C+Elv0ufn05yBQEAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A+zsdH3aNZT/bkjT8U/o5ACzyaeNYzTvtoVmwf/KOilfv39pxY2AIsOwhQJv+YnXp98i3TqrQibIVtMWs5UHjgoAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="AxceVEhIegcDEHqLXFQ2+vPKqzCppoJYsRCZ/BdfVnbM/sUUF2BXV8lwNosyYjvoxnTh2FC8cOlAnA5uULr/zAUAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><link rel="preload" href="./Practice questions of Cpp - Classes and objects_files/f(3).txt" as="script"><script type="text/javascript" src="./Practice questions of Cpp - Classes and objects_files/f(3).txt"></script><link rel="preload" href="./Practice questions of Cpp - Classes and objects_files/f(4).txt" as="script"><script type="text/javascript" src="./Practice questions of Cpp - Classes and objects_files/f(4).txt"></script><style type="text/css">@font-face { font-family: Roboto; src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf"); }</style></head>
+<body data-new-gr-c-s-check-loaded="14.1080.0" data-gr-ext-installed="">
+
+
+
+
+<div itemscope="" itemtype="http://schema.org/Article" style="height: auto !important;">
+  
+
+
+<div class="container-fluid apple">
+    <a href="https://www.codesdope.com/"><img class="header_img_logo" itemprop="image" src="./Practice questions of Cpp - Classes and objects_files/content_new.gif" alt="logo codesdope" width="269" height="47" style="margin-left:0px;"></a>
+    </div>
+    
+    
+    <div id="a">
+    <div id="b">
+    
+    
+    
+    
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <span class="home"><a aria-label="Home" class="navbar-brand" href="https://www.codesdope.com/"><span class="glyphicon glyphicon-home"></span></a></span>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+           <li class="about"><a href="https://www.codesdope.com/about/">About</a></li>
+           <li id="dropcourses" class="dropdown"><a aria-label="Courses" class="dropdown-toggle" data-toggle="dropdown" id="nav_courses" href="https://www.codesdope.com/course/">Courses</a>
+              <ul id="dropcourses-menu" class="dropdown-menu">
+    
+                <li><a href="https://www.codesdope.com/course/python-introduction/">Python</a></li>
+                <li><a href="https://www.codesdope.com/c-introduction/">C</a></li>
+            <li><a href="https://www.codesdope.com/cpp-introduction/">C++</a></li>
+            <li><a href="https://www.codesdope.com/java-introduction/">Java</a></li>
+            <li><a href="https://www.codesdope.com/ruby-introduction/">Ruby</a></li>
+            <li><a href="https://www.codesdope.com/perl-introduction/">Perl</a></li>
+        <li><a href="https://www.codesdope.com/course/algorithms-introduction/">Algorithms</a></li>
+        <li><a href="https://www.codesdope.com/course/data-structures-introduction/">Data Structures</a></li>
+        <li><a href="https://www.codesdope.com/course/c-sharp-introduction/">C#</a></li>
+              </ul>
+            </li>
+            <li class="discussion"><a href="https://www.codesdope.com/discussion/">Discussion</a></li>
+            <li class="practice"><a href="https://www.codesdope.com/practice/">Practice</a></li>
+        <li><a href="https://www.codesdope.com/blog/">Blog</a></li>
+        <li><a href="https://pro.codesdope.com/" target="_blank">PRO</a></li>
+        <li><a href="https://6figr.com/salaries" target="_blank">Salaries</a></li>
+          </ul>
+
+          
+          <ul class="nav navbar-nav navbar-right">
+            <!-- <li class="donate"><a>Donate</a></li> -->
+        
+            <li><a href="https://www.codesdope.com/practice/cpp-classes-and-objects/#user" class="signupwindow"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="https://www.codesdope.com/practice/cpp-classes-and-objects/#login" class="loginwindow"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        
+    
+    
+    
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+    
+    
+</div>
+</div>
+
+
+
+
+<div id="user" class="signuppop">
+        <a class="close" href="https://www.codesdope.com/practice/cpp-classes-and-objects/#close">
+        <img src="./Practice questions of Cpp - Classes and objects_files/closeicon.png" class="btn_close" title="Close Window" alt="Close">
+        </a>
+        <i class="fa fa-user fa-5x"></i>
+        <br>
+        <p class="welcome_signup">Welcome.please sign up.</p>
+        
+        
+        <form class="signup" method="post" action="https://www.codesdope.com/accounts/signup/?next=/practice/cpp-classes-and-objects/">
+        
+        
+        <input type="hidden" name="csrfmiddlewaretoken" value="eZRn6G9FdePRjb44Iyl5ECzngn7x3G9rEEBmOLCFAuqmSAhsDHQeQmC81GTEVtmw">
+        <fieldset class="signup_text">
+        
+        <label class="signup_username">
+        <span>Username</span>
+        <input id="signup_username" name="username" value="" type="text" autocomplete="on" placeholder="Username">
+        </label>
+        
+        <label class="signup_password">
+        <span>Password (min 6 characters)</span>
+        <input class="signup_password_input" name="password1" value="" type="password" placeholder="Password">
+        </label>
+        
+        <label class="signup_password">
+        <span>Password (again)</span>
+        <input class="signup_password_input" name="password2" value="" type="password" placeholder="Password">
+        </label>
+        
+        <label class="signup_email">
+        <span>Email</span>
+        <input id="signup_email" name="email" value="" type="email" autocomplete="on" placeholder="Email">
+        </label>
+        
+        <div class="g-recaptcha" data-sitekey="6LffjpYUAAAAADOqTtbVWqY-zNpWu_Eq2NCVUQNV" name="captcha"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" src="./Practice questions of Cpp - Classes and objects_files/anchor.html" width="304" height="78" role="presentation" name="a-xr8zv9j2snp9" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;" src="./Practice questions of Cpp - Classes and objects_files/saved_resource.html"></iframe></div>
+        
+        
+        
+        <button class="signup_submit button" type="submit">Sign Up</button>
+        <p>By signing up or logging in, you agree to our <a href="https://www.codesdope.com/terms-of-use/">Terms of service</a><br>and confirm that you have read our <a href="https://www.codesdope.com/privacy-policy/">Privacy Policy</a>.</p>
+        <p class="p_member_label">
+         Already a member? Go to <a id="a_member" href="https://www.codesdope.com/practice/cpp-classes-and-objects/#login">Log In</a>
+         </p>
+         <br>
+        </fieldset>
+        </form>
+        </div>
+        
+        
+        
+        <div id="login" class="loginpop">
+        <a class="close" href="https://www.codesdope.com/practice/cpp-classes-and-objects/#close">
+        <img src="./Practice questions of Cpp - Classes and objects_files/closeicon.png" class="btn_close" title="Close Window" alt="Close">
+        </a>
+        <i class="fa fa-user fa-5x"></i>
+        <br>
+        <p class="welcome_signup">Welcome.please login.</p>
+        <form class="signup" method="post" action="https://www.codesdope.com/accounts/login/?next=/practice/cpp-classes-and-objects/">
+        <input type="hidden" name="csrfmiddlewaretoken" value="eZRn6G9FdePRjb44Iyl5ECzngn7x3G9rEEBmOLCFAuqmSAhsDHQeQmC81GTEVtmw">
+        <fieldset class="signup_text">
+        
+        <label class="login_username">
+        <span>Username or Email</span>
+        <input id="login_username" name="login" value="" type="text" autocomplete="on" placeholder="Username or email">
+        </label>
+        
+        <label class="login_password">
+        <span>Password</span>
+        <input id="login_password" name="password" value="" type="password" placeholder="Password">
+        </label>
+        
+        
+        <label class="login_check">
+        <input id="login_check" name="remember" value="" type="checkbox"> <span id="remember">Remember me</span>
+        </label>
+        
+        <p class="forgot">
+         <a class="forget" href="https://www.codesdope.com/accounts/password/reset/">Forgot your password</a>
+        </p>
+        
+        <button class="login_submit button" type="submit">Login</button>
+         <p class="p_member_label">
+         Not registered yet? Go to <a id="a_login" href="https://www.codesdope.com/practice/cpp-classes-and-objects/#user">Sign Up</a>
+         </p>
+        
+        
+        
+        <br>
+        <p>By signing up or logging in, you agree to our <a href="https://www.codesdope.com/terms-of-use/">Terms of service</a><br>and confirm that you have read our <a href="https://www.codesdope.com/privacy-policy/">Privacy Policy</a>.</p>
+        <!-- <hr class="signup_hr">
+        
+        <a href="/accounts/facebook/login/?next=/practice/cpp-classes-and-objects/"><div class="login_facebook"><i class="fa fa-facebook fa-lg"></i>&nbsp;&nbsp;&nbsp;&nbsp;Login with Facebook</div></a>
+        <a href="/accounts/google/login/?next=/practice/cpp-classes-and-objects/"><div class="login_google"><i class="fa fa-google-plus fa-lg"></i>&nbsp;&nbsp;&nbsp;Login with Google</div></a>
+        
+        
+
+
+<div id="fb-root"></div>
+<script id="allauth-facebook-settings" type="application/json">
+{"appId": "248267068862122", "version": "v2.4", "sdkUrl": "//connect.facebook.net/en_us/sdk.js", "initParams": {"appId": "248267068862122", "version": "v2.4"}, "loginOptions": {"auth_type": "reauthenticate", "scope": "email,public_profile", "auth_nonce": "3SyfucijJsjHP6SGuQBQm9gIsttjCaBl"}, "loginByTokenUrl": "https://www.codesdope.com/accounts/facebook/login/token/", "cancelUrl": "https://www.codesdope.com/accounts/social/login/cancelled/", "logoutUrl": "https://www.codesdope.com/accounts/logout/", "loginUrl": "https://www.codesdope.com/accounts/facebook/login/", "errorUrl": "https://www.codesdope.com/accounts/social/login/error/", "csrfToken": "pYy8FO4oHZOuGIGaMb3pVFSRhdMG5oBVPDi7nTxo4fpZf7TyHkyy7pVC2wyNXbO0"}
+</script>
+<script type="text/javascript" src="/staticroot/facebook/js/fbconnect.js"></script>
+
+
+ -->
+        
+        </fieldset>
+        </form>
+    </div>
+
+
+<style>
+    .fixnav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    .navbar {
+        /*changing default properties of navbar  */
+        padding: 0px 0px;
+        font-size: 18px !important;
+        font-weight: 500 !important;
+        font-family: "Source Sans Pro", sans-serif;
+        background-color: black !important;
+        border-radius: 0% !important;
+        z-index: 10;
+    }
+    .navbar-inverse .navbar-nav > li > a:hover,
+    .navbar-inverse .navbar-nav > li > a:focus {
+        color: #ea0000 !important; /*Sets the text hover color on navbar*/
+        padding-top: 9px;
+        padding-bottom: 20px;
+        font-weight: 500;
+    }
+    .navbar-inverse .navbar-nav > li > a:hover,
+    .navbar-inverse .navbar-nav > li > a:focus {
+        box-shadow: 0px 6px 0px #ea0000;
+    }
+    .navbar-inverse .navbar-nav > .active > a,
+    .navbar-inverse .navbar-nav > .active > a:hover,
+    .navbar-inverse .navbar-nav > .active > a:focus {
+        /*BACKGROUND color for active*/
+        background-color: black;
+    }
+    .navbar-inverse {
+        background-color: black !important; /*default background color */
+        box-shadow: 0px 6px 0px transparent;
+    }
+    .dropdown-menu {
+        margin-top: -2px !important;
+        margin-left: -2px !important;
+    }
+    .dropdown-menu > li > a:hover,
+    .dropdown-menu > li > a:focus {
+        color: white;
+        font-weight: 700;
+        text-decoration: none;
+        background-color: #282828 !important; /*change color of links in drop down here*/
+    }
+    .navbar-inverse .navbar-nav > li > a {
+        color: #f2f2f2 !important;
+        -webkit-transition: all 0.2s linear !important;
+        transition: all 0.2s linear !important;
+    }
+    
+    @media (max-width: 768px) {
+        .navbar-inverse .navbar-nav > li > a:hover,
+        .navbar-inverse .navbar-nav > li > a:focus {
+        box-shadow: 0px 0px 0px;
+        }
+    }
+    .apple {
+        height: 80px;
+        background-color: black;
+    }
+    .hoverrr {
+        margin-left: 10px;
+    }
+    .header_img_logo {
+        margin-left: 50px;
+        vertical-align: center;
+        margin-top: 15px;
+    }
+    /*.navbar-brand{
+    background-color:red;
+    }*/
+    .top {
+        position: fixed;
+    }
+    #notification_one {
+        display: none;
+        z-index: 100000;
+        margin-bottom: -45px;
+    }
+    @media (max-width: 768px) {
+    #notification {
+        display: none;
+    }
+    #notification_one {
+        display: inline-block;
+    }
+    }
+    .dropdown:hover .dropdown-menu {
+        /* to display drpdown of learn by hovering  */
+        display: block;
+        margin-top: 0;
+    }
+    .nav-badge {
+        vertical-align: top;
+        margin-top: -11px;
+        margin-left: -13px;
+        background-color: #4e84de;
+    }
+    .dropdown-menu {
+        background-color: black !important;
+    }
+    .dropdown-menu > li > a {
+        background-color: black !important;
+        color: white !important;
+    }
+    /* donate box */
+
+    .donate:hover {
+    cursor: pointer;
+    }
+    #donate {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        display: table !important;
+        background-color: rgba(0, 0, 0, 0.8);
+        text-align: center;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+
+        -webkit-transform: translate(0px, -100%) scale(0, 0);
+        -moz-transform: translate(0px, -100%) scale(0, 0);
+        -o-transform: translate(0px, -100%) scale(0, 0);
+        -ms-transform: translate(0px, -100%) scale(0, 0);
+        transform: translate(0px, -100%) scale(0, 0);
+
+        opacity: 0;
+        z-index: 10;
+    }
+    #donate #donate_wrapper {
+        display: table-cell;
+        vertical-align: middle;
+        /* padding-bottom: -2.5rem; */
+    }
+    #donate #close_donate {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        cursor: pointer;
+        z-index: 100;
+    }
+    #donate #close_donate i {
+        color: white;
+        font-size: 25px;
+    }
+    #donate.open {
+        -webkit-transform: translate(0px, 0px) scale(1, 1);
+        -moz-transform: translate(0px, 0px) scale(1, 1);
+        -o-transform: translate(0px, 0px) scale(1, 1);
+        -ms-transform: translate(0px, 0px) scale(1, 1);
+        transform: translate(0px, 0px) scale(1, 1);
+        opacity: 1;
+    }
+    /* giving constraints to left and right column widths */
+    @media screen and (min-width: 992px) {
+    #div_right {
+        min-width: 195px;
+    }
+
+    #div_left {
+        min-width: 167px;
+        max-width: 350px;
+    }
+    }
+
+    .scroll {
+        max-height: 450px;
+        overflow: auto;
+    /*margin-top:80px;*/
+    }
+    #notification-dropdownone::-webkit-scrollbar {
+        width: 12px;
+    }
+    #notification-dropdownone::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+    }
+    #notification-dropdownone::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6);
+    }
+    #notification-dropdown,
+    #notification-dropdownone,
+    #notification-dropdowntwo {
+        width: 550px;
+    }
+    .not {
+        background-color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 17px;
+        margin-left: -40px;
+        margin-bottom: 1px;
+        padding-right: 10px;
+    }
+    .nota {
+    color: black;
+    font-size: 15px;
+    }
+    .unread {
+        background-color: #e9e9e9;
+    }
+    /*#notification:hover #notification-dropdown,#notification:hover #notification-dropdownone ,#notification:hover #notification-dropdowntwo{
+        display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+    }*/
+    #notification-dropdown > li > a:hover,
+    #notification-dropdown > li > a:focus,
+    #notification-dropdownone > li > a:hover,
+    #notification-dropdownone > a > li:focus,
+    #notification-dropdowntwo > li > a:hover,
+    #notification-dropdowntwo > li > a:focus {
+        color: black;
+        font-weight: 400;
+        text-decoration: none;
+        color: black;
+        text-decoration: none;
+        background-color: #f4f4f4;
+    }
+    #notification-dropdownone > li:hover,
+    #notification-dropdownone > li:focus {
+        background-color: #f4f4f4;
+    }
+    #notification-dropdownone {
+        list-style: none;
+        background-color: #9b9b9b;
+    }
+    #not_read,
+    #not_mark {
+        color: white;
+        font-size: 17px;
+        font-weight: 500;
+        /* padding-bottom:5px !important;*/
+    }
+    #not_read:hover,
+    #not_mark:hover {
+        text-decoration: none;
+    }
+    .gly {
+        display: block;
+        padding: 15px;
+    }
+</style>
+<!-- donate box -->
+<!-- <div id="donate">
+  <span id="close_donate"><i class="fa fa-times"></i></span>
+  <div id="donate_wrapper">
+    <script src="https://donorbox.org/widget.js" paypalExpress="false"></script><iframe src="https://donorbox.org/embed/donate-for-codesdope?amount=10" height="685px" width="100%" style="max-width:500px; min-width:310px; max-height:none!important" seamless="seamless" name="donorbox" frameborder="0" scrolling="no" allowpaymentrequest></iframe>
+  </div>
+</div> -->
+
+   <div class="container-fluid text-center" style="height: auto !important;">
+<div class="row" style="height: auto !important;">
+  
+
+
+
+<div class="col-md-8 col-sm-12 col-xs-12 col-lg-8 text-left" id="div_center" style="margin-top: 20px; height: auto !important; min-height: 0px !important;">
+
+
+<!-- practice section -->
+<h1>Practice questions on Classes and objects</h1>
+<div style="margin-left: auto; margin-right: auto; margin-bottom: 20px;">
+<script async="" src="./Practice questions of Cpp - Classes and objects_files/f(5).txt"></script>
+<!-- Practice - Top -->
+<ins class="adsbygoogle" data-ad-client="ca-pub-4050543544420496" data-ad-format="auto" data-ad-slot="7985263627" data-full-width-responsive="true" style="display: block; height: 280px;" data-adsbygoogle-status="done" data-ad-status="filled"><div id="aswift_0_host" style="border: none; height: 280px; width: 1090px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: visible;" tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:1090px;height:280px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1090" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./Practice questions of Cpp - Classes and objects_files/ads.html" data-google-container-id="a!1" data-google-query-id="CMfdv9PQnfoCFXkeBgAdr-INwg" data-load-complete="true"></iframe></div></ins>
+<script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+</div>
+<div class="clearfix" id="level_section">
+<ul class="nav nav-pills nav-stacked">
+<li class="active"><a data-toggle="tab" href="https://www.codesdope.com/practice/cpp-classes-and-objects/#level1">Level 1</a></li>
+<li><a data-toggle="tab" href="https://www.codesdope.com/practice/cpp-classes-and-objects/#level2">Level 2</a></li>
+</ul>
+</div>
+<div class="tab-content" id="level_wrap">
+<div class="tab-pane fade in active" id="level1"> <!-- level 1 starts -->
+<h2 class="level">Level 1</h2>
+<div class="hide_div">
+<div class="ques_cover">
+<div class="row">
+<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 sno">1.</div>
+<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 ques">
+<div class="ques_title">Create a class named 'Student' with a string variable 'name' and an integer variable 'roll_no'. Assign the value of roll_no as '2' and that of name as "John" by creating an object of the class Student.</div>
+</div>
+</div>
+<div class="open"><i class="fa fa-angle-down"></i></div>
+<div class="ans hidden-result">
+<div>
+<div class="highlight">
+<div class="c"><div class="highlight"><pre style="position: relative;"><span></span><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="n">using</span> <span class="n">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="cp">#include</span> <span class="cpf">&lt;string&gt;</span><span class="cp"></span>
+
+<span class="n">class</span> <span class="n">Student</span>
+<span class="p">{</span>
+    <span class="nl">public</span><span class="p">:</span>
+        <span class="n">string</span> <span class="n">name</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">roll_no</span><span class="p">;</span>
+
+<span class="p">};</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">Student</span> <span class="n">s</span><span class="p">;</span>
+    <span class="n">s</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">"John"</span><span class="p">;</span>
+    <span class="n">s</span><span class="p">.</span><span class="n">roll_no</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">s</span><span class="p">.</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="s">" "</span> <span class="o">&lt;&lt;</span> <span class="n">s</span><span class="p">.</span><span class="n">roll_no</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+<div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr>
+<div class="hide_div">
+<div class="ques_cover">
+<div class="row">
+<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 sno">2.</div>
+<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 ques">
+<div class="ques_title">Assign and print the roll number, phone number and address of two students having names "Sam" and "John" respectively by creating two objects of the class 'Student'.</div>
+</div>
+</div>
+</div>
+</div>
+<hr>
+<div class="hide_div">
+<div class="ques_cover">
+<div class="row">
+<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 sno">3.</div>
+<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 ques">
+<div class="ques_title">Write a program to print the area and perimeter of a triangle having sides of 3, 4 and 5 units by creating a class named 'Triangle' with a function to print the area and perimeter.</div>
+</div>
+</div>
+<div class="open"><i class="fa fa-angle-down"></i></div>
+<div class="ans hidden-result">
+<div>
+<div class="highlight">
+<div class="c"><div class="highlight"><pre style="position: relative;"><span></span><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;string&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;cmath&gt;</span><span class="cp"></span>
+<span class="n">using</span> <span class="n">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="n">class</span> <span class="n">Triangle</span>
+<span class="p">{</span>
+<span class="nl">public</span><span class="p">:</span>
+    <span class="kt">void</span> <span class="n">print_area</span><span class="p">(</span><span class="kt">int</span> <span class="n">s1</span><span class="p">,</span> <span class="kt">int</span> <span class="n">s2</span><span class="p">,</span> <span class="kt">int</span> <span class="n">s3</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="kt">double</span> <span class="n">s</span> <span class="o">=</span> <span class="p">(</span><span class="n">s1</span><span class="o">+</span><span class="n">s2</span><span class="o">+</span><span class="n">s3</span><span class="p">)</span><span class="o">/</span><span class="mf">2.0</span><span class="p">;</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">s</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Perimeter is "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="n">s1</span><span class="o">+</span><span class="n">s2</span><span class="o">+</span><span class="n">s3</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">Triangle</span> <span class="n">t</span><span class="p">;</span>
+    <span class="n">t</span><span class="p">.</span><span class="n">print_area</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">);</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+<div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr>
+<div class="hide_div">
+<div class="ques_cover">
+<div class="row">
+<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 sno">4.</div>
+<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 ques">
+<div class="ques_title">Write a program to print the area and perimeter of a triangle having sides of 3, 4 and 5 units by creating a class named 'Triangle' with the constructor having the three sides as its parameters.</div>
+</div>
+</div>
+<div class="open"><i class="fa fa-angle-down"></i></div>
+<div class="ans hidden-result">
+<div>
+<div class="highlight">
+<div class="c"><div class="highlight"><pre style="position: relative;"><span></span><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;string&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;cmath&gt;</span><span class="cp"></span>
+<span class="n">using</span> <span class="n">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="n">class</span> <span class="n">Triangle</span>
+<span class="p">{</span>
+<span class="nl">public</span><span class="p">:</span>
+    <span class="kt">int</span> <span class="n">s1</span><span class="p">,</span><span class="n">s2</span><span class="p">,</span><span class="n">s3</span><span class="p">;</span>
+    <span class="n">Triangle</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span><span class="kt">int</span> <span class="n">b</span><span class="p">,</span><span class="kt">int</span> <span class="n">c</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">s1</span> <span class="o">=</span> <span class="n">a</span><span class="p">;</span>
+        <span class="n">s2</span> <span class="o">=</span> <span class="n">b</span><span class="p">;</span>
+        <span class="n">s3</span> <span class="o">=</span> <span class="n">c</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="kt">void</span> <span class="n">print_area</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="kt">double</span> <span class="n">s</span> <span class="o">=</span> <span class="p">(</span><span class="n">s1</span><span class="o">+</span><span class="n">s2</span><span class="o">+</span><span class="n">s3</span><span class="p">)</span><span class="o">/</span><span class="mf">2.0</span><span class="p">;</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">s</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Perimeter is "</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="n">s1</span><span class="o">+</span><span class="n">s2</span><span class="o">+</span><span class="n">s3</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">Triangle</span> <span class="n">t</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">);</span>
+    <span class="n">t</span><span class="p">.</span><span class="n">print_area</span><span class="p">();</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+<div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr>
+<div class="hide_div">
+<div class="ques_cover">
+<div class="row">
+<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 sno">5.</div>
+<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 ques">
+<div class="ques_title">Write a program to print the area of two rectangles having sides (4,5) and (5,8) respectively by creating a class named 'Rectangle' with a function named 'Area' which returns the area. Length and breadth are passed as parameters to its constructor.</div>
+</div>
+</div>
+</div>
+</div>
+<hr>
+<div class="hide_div">
+<div class="ques_cover">
+<div class="row">
+<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 sno">6.</div>
+<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 ques">
+<div class="ques_title">Write a program to print the area of a rectangle by creating a class named 'Area' having two functions. First function named as 'setDim' takes the length and breadth of the rectangle as parameters and the second function named as 'getArea' returns the area of the rectangle. Length and breadth of the rectangle are entered through keyboard.</div>
+</div>
+</div>
+<div class="open"><i class="fa fa-angle-down"></i></div>
+<div class="ans hidden-result">
+<div>
+<div class="highlight">
+<div class="c"><div class="highlight"><pre style="position: relative;"><span></span><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="n">using</span> <span class="n">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="n">class</span> <span class="n">Area</span>
+<span class="p">{</span>
+<span class="nl">public</span><span class="p">:</span>
+    <span class="kt">int</span> <span class="n">length</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">breadth</span><span class="p">;</span>
+    <span class="kt">void</span> <span class="nf">setDim</span><span class="p">(</span><span class="kt">int</span> <span class="n">l</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">length</span> <span class="o">=</span> <span class="n">l</span><span class="p">;</span>
+        <span class="n">breadth</span> <span class="o">=</span> <span class="n">b</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="kt">int</span> <span class="nf">getArea</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="n">length</span><span class="o">*</span><span class="n">breadth</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">Area</span> <span class="n">a</span><span class="p">;</span>
+    <span class="n">a</span><span class="p">.</span><span class="n">setDim</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">);</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">a</span><span class="p">.</span><span class="n">getArea</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>                               
+<div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr>
+<div class="hide_div">
+<div class="ques_cover">
+<div class="row">
+<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 sno">7.</div>
+<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 ques">
+<div class="ques_title">Write a program to print the area of a rectangle by creating a class named 'Area' taking the values of its length and breadth as parameters of its constructor and having a function named 'returnArea' which returns the area of the rectangle. Length and breadth of the rectangle are entered through keyboard.</div>
+</div>
+</div>
+</div>
+</div>
+<hr>
+<div class="hide_div">
+<div class="ques_cover">
+<div class="row">
+<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 sno">8.</div>
+<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 ques">
+<div class="ques_title">Print the average of three numbers entered by the user by creating a class named 'Average' having a function to calculate and print the average without creating any object of the Average class.</div>
+</div>
+</div>
+</div>
+</div>
+<hr>
+<div class="hide_div">
+<div class="ques_cover">
+<div class="row">
+<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 sno">9.</div>
+<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 ques">
+<div class="ques_title">Print the sum, difference and product of two complex numbers by creating a class named 'Complex' with separate functions for each operation whose real and imaginary parts are entered by the user.</div>
+</div>
+</div>
+<div class="open"><i class="fa fa-angle-down"></i></div>
+<div class="ans hidden-result">
+<div>
+<div class="highlight">
+<div class="c"><div class="highlight"><pre style="position: relative;"><span></span><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="n">using</span> <span class="n">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="n">class</span> <span class="n">Complex</span>
+<span class="p">{</span>
+<span class="nl">private</span><span class="p">:</span>
+    <span class="kt">int</span> <span class="n">real</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">imag</span><span class="p">;</span>
+<span class="nl">public</span><span class="p">:</span>
+    <span class="n">Complex</span><span class="p">(</span><span class="kt">int</span> <span class="n">r</span><span class="p">,</span> <span class="kt">int</span> <span class="n">i</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">real</span> <span class="o">=</span> <span class="n">r</span><span class="p">;</span>
+        <span class="n">imag</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kt">int</span> <span class="n">get_real</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="n">real</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="kt">int</span> <span class="n">get_imag</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="n">imag</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kt">void</span> <span class="n">add</span><span class="p">(</span><span class="n">Complex</span> <span class="n">c1</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">c1</span><span class="p">.</span><span class="n">get_real</span><span class="p">()</span><span class="o">+</span><span class="n">real</span> <span class="o">&lt;&lt;</span> <span class="s">"+i"</span> <span class="o">&lt;&lt;</span> <span class="n">c1</span><span class="p">.</span><span class="n">get_imag</span><span class="p">()</span><span class="o">+</span><span class="n">imag</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kt">void</span> <span class="n">difference</span><span class="p">(</span><span class="n">Complex</span> <span class="n">c1</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">real</span><span class="o">-</span><span class="n">c1</span><span class="p">.</span><span class="n">get_real</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="s">"+i"</span> <span class="o">&lt;&lt;</span> <span class="n">imag</span><span class="o">-</span><span class="n">c1</span><span class="p">.</span><span class="n">get_imag</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kt">void</span> <span class="n">multiply</span><span class="p">(</span><span class="n">Complex</span> <span class="n">c1</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="p">((</span><span class="n">real</span><span class="o">*</span><span class="n">c1</span><span class="p">.</span><span class="n">get_real</span><span class="p">())</span><span class="o">-</span><span class="p">(</span><span class="n">imag</span><span class="o">*</span><span class="n">c1</span><span class="p">.</span><span class="n">get_imag</span><span class="p">()))</span> <span class="o">&lt;&lt;</span> <span class="s">"+i"</span> <span class="o">&lt;&lt;</span> <span class="p">((</span><span class="n">real</span><span class="o">*</span><span class="n">c1</span><span class="p">.</span><span class="n">get_imag</span><span class="p">())</span><span class="o">+</span><span class="p">(</span><span class="n">imag</span><span class="o">*</span><span class="n">c1</span><span class="p">.</span><span class="n">get_real</span><span class="p">()))</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">Complex</span> <span class="n">c1</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">);</span>
+    <span class="n">Complex</span> <span class="n">c2</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">);</span>
+    <span class="n">c1</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">c2</span><span class="p">);</span>
+    <span class="n">c1</span><span class="p">.</span><span class="n">difference</span><span class="p">(</span><span class="n">c2</span><span class="p">);</span>
+    <span class="n">c1</span><span class="p">.</span><span class="n">multiply</span><span class="p">(</span><span class="n">c2</span><span class="p">);</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>                               
+<div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr>
+<div class="hide_div">
+<div class="ques_cover">
+<div class="row">
+<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 sno">10.</div>
+<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 ques">
+<div class="ques_title">Write a program to print the volume of a box by creating a class named 'Volume' with an initialization list to initialize its length, breadth and height. (just to make you familiar with initialization lists)</div>
+</div>
+</div>
+</div>
+</div>
+<hr>
+<div class="hide_div">
+<div class="ques_cover">
+<div class="row">
+<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 sno">11.</div>
+<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 ques">
+<div class="ques_title">Write a program that would print the information (name, year of joining, salary, address) of three employees by creating a class named 'Employee'. The output should be as follows:<br>
+Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Year of joining&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address<br>
+Robert&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1994&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;64C- WallsStreat<br>
+Sam&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;68D- WallsStreat<br>
+John&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1999&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;26B- WallsStreat<br></div>
+</div>
+</div>
+</div>
+</div>
+<hr>
+<div class="hide_div">
+<div class="ques_cover">
+<div class="row">
+<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 sno">12.</div>
+<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 ques">
+<div class="ques_title">Add two distances in inch-feet by creating a class named 'AddDistance'.</div>
+</div>
+</div>
+</div>
+</div>
+<hr>
+</div> <!-- level 1 ends -->
+<div class="tab-pane fade" id="level2"> <!-- level 2 starts -->
+<h2 class="level">Level 2</h2>
+<div class="hide_div">
+<div class="ques_cover">
+<div class="row">
+<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 sno">1.</div>
+<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 ques">
+                  Write a program by creating an 'Employee' class having the following functions and print the final salary.<br>
+1 - 'getInfo()' which takes the salary, number of hours of work per day of employee as parameters<br>
+2 - 'AddSal()' which adds $10 to the salary of the employee if it is less than $500.<br>
+3 - 'AddWork()' which adds $5 to the salary of the employee if the number of hours of work per day is more than 6 hours.
+                </div>
+</div>
+</div>
+</div>
+<hr>
+<div class="hide_div">
+<div class="ques_cover">
+<div class="row">
+<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 sno">2.</div>
+<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 ques">
+                  Create a class called 'Matrix' containing constructor that initializes the number of rows and the number of columns of a new Matrix object. The Matrix class has the following information:<br>
+1 - number of rows of matrix<br>
+2 - number of columns of matrix<br>
+3 - elements of matrix (You can use 2D vector)<br>
+The Matrix class has functions for each of the following:<br>
+1 - get the number of rows<br>
+2 - get the number of columns<br>
+3 - set the elements of the matrix at a given position (i,j)<br>
+4 - adding two matrices.<br>
+5 - multiplying the two matrices<br>
+You can assume that the dimensions are correct for the multiplication and addition.
+                </div>
+</div>
+<div class="open"><i class="fa fa-angle-down"></i></div>
+<div class="ans hidden-result">
+<div>
+<div class="highlight">
+<div class="c"><div class="highlight"><pre style="position: relative;"><span></span><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp"></span>
+<span class="n">using</span> <span class="n">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="n">class</span> <span class="n">Matrix</span>
+<span class="p">{</span>
+<span class="nl">private</span><span class="p">:</span>
+    <span class="kt">int</span> <span class="n">row</span><span class="p">,</span><span class="n">col</span><span class="p">;</span>
+    <span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">matrix</span><span class="p">;</span>
+<span class="nl">public</span><span class="p">:</span>
+    <span class="n">Matrix</span><span class="p">(</span><span class="kt">int</span> <span class="n">r</span><span class="p">,</span> <span class="kt">int</span> <span class="n">c</span><span class="p">,</span> <span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="o">&amp;</span><span class="n">m</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">row</span> <span class="o">=</span> <span class="n">r</span><span class="p">;</span>
+        <span class="n">col</span> <span class="o">=</span> <span class="n">c</span><span class="p">;</span>
+        <span class="n">matrix</span> <span class="o">=</span> <span class="n">m</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kt">int</span> <span class="n">get_row_number</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="n">row</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kt">int</span> <span class="n">get_col_number</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="n">col</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">get_vector</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="n">matrix</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kt">void</span> <span class="n">set_element</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="p">,</span> <span class="kt">int</span> <span class="n">j</span><span class="p">,</span> <span class="kt">int</span> <span class="n">e</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">matrix</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">e</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kt">void</span> <span class="n">display</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">row</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">j</span><span class="o">&lt;</span><span class="n">col</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">matrix</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="s">"</span><span class="se">\t</span><span class="s">"</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="n">Matrix</span> <span class="n">add</span><span class="p">(</span><span class="n">Matrix</span> <span class="n">m</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="c1">//assuming matrices can be added</span>
+        <span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">v</span><span class="p">;</span>
+        <span class="n">v</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">row</span><span class="p">,</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="n">col</span><span class="p">,</span><span class="mi">0</span><span class="p">));</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">row</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;</span><span class="n">col</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">matrix</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">+</span><span class="n">m</span><span class="p">.</span><span class="n">get_vector</span><span class="p">()[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">];</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="n">Matrix</span> <span class="n">n</span><span class="p">(</span><span class="n">row</span><span class="p">,</span><span class="n">col</span><span class="p">,</span><span class="n">v</span><span class="p">);</span>
+        <span class="k">return</span> <span class="n">n</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="n">Matrix</span> <span class="n">multiply</span><span class="p">(</span><span class="n">Matrix</span> <span class="n">m</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="c1">//assuming dimension is correct for multiplication</span>
+        <span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">v</span><span class="p">;</span>
+        <span class="n">v</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">row</span><span class="p">,</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="n">m</span><span class="p">.</span><span class="n">get_col_number</span><span class="p">(),</span><span class="mi">0</span><span class="p">));</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">row</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">j</span><span class="o">&lt;</span><span class="n">m</span><span class="p">.</span><span class="n">get_col_number</span><span class="p">();</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">k</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">k</span><span class="o">&lt;</span><span class="n">col</span><span class="p">;</span> <span class="n">k</span><span class="o">++</span><span class="p">)</span>
+                <span class="p">{</span>
+                     <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">+</span><span class="p">(</span><span class="n">matrix</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">]</span><span class="o">*</span><span class="n">m</span><span class="p">.</span><span class="n">get_vector</span><span class="p">()[</span><span class="n">k</span><span class="p">][</span><span class="n">j</span><span class="p">]);</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="n">Matrix</span> <span class="n">n</span><span class="p">(</span><span class="n">row</span><span class="p">,</span><span class="n">m</span><span class="p">.</span><span class="n">get_col_number</span><span class="p">(),</span><span class="n">v</span><span class="p">);</span>
+        <span class="k">return</span> <span class="n">n</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">m</span><span class="p">{{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">},{</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">},{</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">}};</span>
+    <span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">n</span><span class="p">{{</span><span class="mi">10</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">12</span><span class="p">},{</span><span class="mi">13</span><span class="p">,</span><span class="mi">14</span><span class="p">,</span><span class="mi">15</span><span class="p">},{</span><span class="mi">16</span><span class="p">,</span><span class="mi">17</span><span class="p">,</span><span class="mi">18</span><span class="p">}};</span>
+    <span class="n">Matrix</span> <span class="n">m1</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="n">m</span><span class="p">);</span>
+    <span class="n">Matrix</span> <span class="n">m2</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="n">n</span><span class="p">);</span>
+    <span class="n">m1</span><span class="p">.</span><span class="n">display</span><span class="p">();</span>
+    <span class="n">m2</span><span class="p">.</span><span class="n">display</span><span class="p">();</span>
+    <span class="n">Matrix</span> <span class="n">a</span> <span class="o">=</span> <span class="n">m1</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">m2</span><span class="p">);</span>
+    <span class="n">a</span><span class="p">.</span><span class="n">display</span><span class="p">();</span>
+    <span class="n">Matrix</span> <span class="n">b</span> <span class="o">=</span> <span class="n">m1</span><span class="p">.</span><span class="n">multiply</span><span class="p">(</span><span class="n">m2</span><span class="p">);</span>
+    <span class="n">b</span><span class="p">.</span><span class="n">display</span><span class="p">();</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>                               
+<div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr>
+</div> <!-- level 2 ends -->
+<div class="tab-pane fade" id="level3"> <!-- level 3 starts -->
+<h2 class="level">Level 3</h2>
+</div> <!-- level 3 ends -->
+</div> <!-- practice section ends -->
+
+<div>
+<script async="" src="./Practice questions of Cpp - Classes and objects_files/f(5).txt"></script>
+<!-- Practice - Bottom -->
+<ins class="adsbygoogle" data-ad-client="ca-pub-4050543544420496" data-ad-format="auto" data-ad-slot="2529100422" data-full-width-responsive="true" style="display: block; height: 280px;" data-adsbygoogle-status="done" data-ad-status="filled"><div id="aswift_1_host" style="border: none; height: 280px; width: 1079px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: visible;" tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0;width:1079px;height:280px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1079" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./Practice questions of Cpp - Classes and objects_files/ads(1).html" data-google-container-id="a!2" data-google-query-id="CJ7RxtPQnfoCFePg5godjQkO7A" data-load-complete="true"></iframe></div></ins>
+<script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+
+
+
+<!--further article-->
+
+
+
+<!-- <div class="container-fluid" style="margin-top:20px;clear:both">
+<div class="container-fluid mssg_div">
+<span class="mssg">
+    Share what you know
+</span>
+</div>
+<div style="height:80px; padding-top:20px;" class="container-fluid share_icons">
+<a onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=www.codesdope.com', '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes');" href="https://www.facebook.com/sharer/sharer.php?u=www.codesdope.com" target="_blank" id="fb" class="s_facebook" href="#facebook"><i class="social_facebook fa fa-facebook"></i></a>
+<a onclick="window.open('https://twitter.com/home?status=Simplest%20tutorials%20of%20%23C%20%23Java%20%23Python%20%23Ruby%20%23Cpp%20%23Perl%20for%20free%0Awww.codesdope.com%0A%40codesdope', '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes');" href="https://twitter.com/home?status=Simplest%20tutorials%20of%20%23C%20%23Java%20%23Python%20%23Ruby%20%23Cpp%20%23Perl%20for%20free%0Awww.codesdope.com%0A%40codesdope" target="_blank" class="s_twitter" href="#twitter"><i class="social_twitter fa fa-twitter"></i></a>
+<a onclick="window.open('https://pinterest.com/pin/create/button/?url=www.codesdope.com&media=https%3A//s-media-cache-ak0.pinimg.com/564x/aa/4a/c5/aa4ac5daf10085351ebcb9890608a650.jpg&description=Simplest%20way%20to%20learn%20coding%0Awww.codesdope.com', '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes');" href="https://pinterest.com/pin/create/button/?url=www.codesdope.com&media=https%3A//s-media-cache-ak0.pinimg.com/564x/aa/4a/c5/aa4ac5daf10085351ebcb9890608a650.jpg&description=Simplest%20way%20to%20learn%20coding%0Awww.codesdope.com" target="_blank" class="s_pinterest" href="#pinterest"><i class="social_pinterest fa fa-pinterest"></i></a>
+<a onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url=www.codesdope.com&title=Learn%20to%20Code&summary=Simplest%20tutorial%20for%20C,%20Java%20,%20Ruby%20and%20Python%20for%20free&source=www.codesdope.com', '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes');" href="https://www.linkedin.com/shareArticle?mini=true&url=www.codesdope.com&title=Learn%20to%20Code&summary=Simplest%20tutorial%20for%20C,%20Java%20,%20Ruby%20and%20Python%20for%20free&source=www.codesdope.com" target="_blank" class="s_linkedin" href="#linkedin"><i class="social_linkedin fa fa-linkedin"></i></a>
+<a onclick="window.open('https://plus.google.com/share?url=www.codesdope.com', '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes');" href="https://plus.google.com/share?url=www.codesdope.com" target="_blank" class="s_google" href="#google"><i class="social_google fa fa-google-plus"></i></a>
+</div>
+</div> -->
+
+</div>
+
+<div class="col-md-4 col-sm-12 col-xs-12 col-lg-4 sidenav" id="div_right" style="background-color: white; height: auto !important; min-height: 0px !important;">
+
+  
+
+
+<div style="margin-top: 20px; margin-left: auto; margin-right: auto;">
+  <script async="" src="./Practice questions of Cpp - Classes and objects_files/f(5).txt"></script>
+  <!-- Practice Right - Top -->
+  <ins class="adsbygoogle" style="display: block; height: 280px;" data-ad-client="ca-pub-4050543544420496" data-ad-slot="5702058676" data-ad-format="auto" data-full-width-responsive="true" data-adsbygoogle-status="done" data-ad-status="filled"><div id="aswift_2_host" style="border: none; height: 280px; width: 524px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: visible;" tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;border:0;width:524px;height:280px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="524" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./Practice questions of Cpp - Classes and objects_files/ads(2).html" data-google-container-id="a!3" data-google-query-id="CMuAy9PQnfoCFdlfFQgd-ksGuA" data-load-complete="true"></iframe></div></ins>
+  <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
+</div>
+
+
+
+  
+  <!-- <div class="app">
+    <div class="app_top">Download Our App.</div>
+    <div class="app_middle">
+      <img src="/staticroot/images/app2.png" style="width: 80%;height:auto;margin:0" alt="BlogsDope App">
+    </div>
+    <div class="app_down">
+      <a rel="noopener" href='https://play.google.com/store/apps/details?id=com.blogsdope&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target="_blank"><img style="width: 90%; height: auto; margin:0" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
+    </div>
+  </div> -->
+
+  <div>
+    <style>
+      /*PRO*/
+      .pro-side-banner-primary {
+        box-sizing: border-box;
+        margin-top: 30px;
+        padding: 0 0 22px;
+        max-width: 240px;
+        width: 100%;
+        -webkit-box-shadow: 0 0 19px -1px rgb(92 91 92 / 80%);
+        -moz-box-shadow: 0 0 19px -1px rgba(92, 91, 92, 0.8);
+        box-shadow: 0 0 19px -1px rgb(92 91 92 / 80%);
+      }
+      .pro-side-banner-primary-child1 {
+        font-size: 13px;
+        text-align: center;
+        color: black;
+      }
+      .pro-side-banner-primary-child2 {
+        margin-top: 8px;
+        font-size: 13px;
+        text-align: center;
+        color: black;
+      }
+      .pro-banner-special-span {
+        display: inline-block;
+        font-size: 15.5px;
+        font-weight: 500;
+        padding: 3px 5px;
+        background-color: #feae00;
+        color: black;
+        border-radius: 2px;
+      }
+      #special-span1 {
+        transform: rotate(1deg);
+      }
+      #special-span2 {
+        transform: rotate(-1deg);
+      }
+      .pro-primary-logo-codesdope {
+        font-size: 10px;
+        letter-spacing: 1px;
+        font-weight: 700;
+      }
+      .pro-primary-logo-pro {
+        padding: 3px 5px;
+        background-color: #feae00;
+        font-size: 10px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        border-radius: 2px;
+      }
+      .pro-side-banner-primary-logo {
+        background-color: #802bb1;
+        margin-bottom: 20px;
+        text-align: center;
+        padding: 13px 7px;
+      }
+      .pro-primary-logo-codesdope {
+        color: white;
+        font-size: 15px;
+        letter-spacing: 1px;
+        font-weight: 500;
+      }
+      .pro-primary-logo-pro {
+        padding: 3px 5px;
+        background-color: #feae00;
+        font-size: 15px;
+        color: black;
+        letter-spacing: 1px;
+        font-weight: 500;
+        border-radius: 2px;
+      }
+      /* secondary banner */
+      .upper-wrapper {
+        padding-top: 10px;
+      }
+      .pro-side-banner-secondary {
+        box-sizing: border-box;
+        margin-top: 10px;
+        max-width: 240px;
+        width: 100%;
+        -webkit-box-shadow: 0 0 19px -1px rgb(92 91 92 / 80%);
+        -moz-box-shadow: 0 0 19px -1px rgba(92, 91, 92, 0.8);
+        box-shadow: 0 0 19px -1px rgb(92 91 92 / 80%);
+      }
+      .pro-side-banner-secondary-child1 {
+        padding: 10px 5px 0;
+        text-align: center;
+        font-size: 17px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        color: black;
+      }
+      .underline {
+        width: 112px;
+        height: 27px;
+        border-bottom: 3px solid #802bb1;
+        -webkit-transform: translateY(-25px);
+        transform: translateY(-25px);
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .pro-banner-body {
+        margin-top: -10px;
+        padding: 0 10px 21px;
+        text-align: left;
+      }
+      .pro-banner-body-list {
+        margin-top: 8px;
+        font-size: 14px;
+      }
+      .pro-banner-list-span {
+        font-size: 17px;
+        font-weight: 500;
+        color: black;
+        border-radius: 2px;
+      }
+      .list-icon {
+        width: 20px;
+        color: #802bb1;
+        margin-right: 8px !important;
+        font-size: 15px;
+      }
+      .list-text {
+        color: black;
+      }
+      .pro-banner-off-wrapper {
+        padding: 10px;
+        background-color: #802bb1;
+        text-align: center;
+        font-weight: 500;
+        font-size: 15px;
+        color: #efefef;
+      }
+      .pro-off-text {
+        font-weight: 700;
+        font-size: 18px;
+        margin-left: 4px !important;
+        color: white;
+        letter-spacing: 1px;
+      }
+      .pro-footer-website-text {
+        margin-left: 6px;
+        color: white;
+      }
+      /* general */
+      .pro-banner-bold-500 {
+        font-weight: 500;
+      }
+      .pro-banner-bold-700 {
+        font-weight: 700;
+      }
+      .blue-color {
+        color: #802bb1;
+      }
+      .yellow-color {
+        color: #feae00;
+      }
+      .text-decoration-none {
+        text-decoration: none !important;
+      }
+      .italic-style {
+        font-style: italic;
+      }
+      /* Offer */
+      .pro-banner-offer {
+         padding: 12px 5px;
+         background-color: #feae00;
+         font-size: 15px;
+         color: #121212;
+         font-weight: 500;
+       }
+       .pro-banner-offer-off {
+         font-size: 23px;
+         color: #121212;
+         font-weight: 800;
+         letter-spacing: 1px;
+       }
+       .pro-banner-offer-text {
+         font-size: 14px;
+         color: #121212;
+         font-weight: 800;
+         letter-spacing: 1px;
+       }
+       .pro-banner-offer-text-secondary {
+          font-size: 16px;
+          color: #121212;
+          font-weight: 800;
+          letter-spacing: .2px;
+        }
+        .pro-banner-offer-secondary-span {
+          margin-left: 2px !important;
+        }
+       #offer-off-text {
+         display: none;
+       }
+       /* counter */
+       #countdown {
+         margin-bottom: 10px;
+         text-align: center;
+         letter-spacing: 1px;
+         background-color: #f7f7f7;
+         box-shadow: 0 0 5px 2px rgb(18 18 18 / 20%);
+         -webkit-box-shadow: 0 0 5px 2px rgb(18 18 18 / 20%);
+         -moz-box-shadow: 0 0 5px 2px rgb(18 18 18 / 20%);
+       }
+       #countdown ul {
+         padding-left: 0;
+         margin: 0;
+       }
+       #countdown li {
+         display: inline-block;
+         font-size: 12px;
+         list-style-type: none;
+         padding: 5px;
+         text-transform: uppercase;
+         color: black;
+       }
+       #countdown li span {
+         display: block;
+         font-size: 20px;
+         color: #802bb1;
+         font-weight: 700;
+       }
+    </style>
+    <script>
+      (function () {
+        const second = 1000,
+          minute = second * 60,
+          hour = minute * 60,
+          day = hour * 24;
+
+        let date = "Nov 27, 2021 23:59:00",
+          countDown = new Date(date).getTime(),
+          x = setInterval(function () {
+            let currentOffset = new Date().getTimezoneOffset();
+            let ISTOffset = 330;
+            let now = new Date(
+              new Date().getTime() +
+                (ISTOffset + currentOffset) * 60000
+            ),
+            distance = countDown - now;
+
+            (document.getElementById("days").innerText = Math.floor(distance / day)),
+              (document.getElementById("hours").innerText = Math.floor(
+                (distance % day) / hour
+              )),
+              (document.getElementById("minutes").innerText = Math.floor(
+                (distance % hour) / minute
+              )),
+              (document.getElementById("seconds").innerText = Math.floor(
+                (distance % minute) / second
+              ));
+              // If the count down is over, write some text 
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("offer-counter-banner").style.display = "none";
+              }
+          }, 0);
+      })();
+    </script>
+    <div class="pro-side-banner-primary">
+      <a href="https://codop.es/pro" target="_blank" class="text-decoration-none">
+        <div class="text-decoration-none">
+          <div class="pro-side-banner-primary-logo">
+            <span class="pro-primary-logo-codesdope">CODESDOPE</span>
+            <span class="pro-primary-logo-pro">PRO</span>
+          </div>
+          <div class="pro-side-banner-primary-child1">
+            It's
+            <div class="pro-banner-special-span" id="special-span1">
+              Simple and Conceptual
+            </div>
+          </div>
+          <div class="pro-side-banner-primary-child2">
+            with
+            <span class="pro-banner-special-span" id="special-span2">Chance for Internship*
+            </span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Offer banner -->
+    <div id="offer-counter-banner" class="pro-side-banner-secondary" style="display: none;">
+      <a href="https://pro.codesdope.com/courses/cpp/cpp-how-hello-world-is-printed/" target="_blank" class="text-decoration-none">
+      <div class="pro-banner-offer">
+        <div class="pro-banner-offer-off">C++ in English</div>
+        <div class="pro-banner-offer-text">Launched</div>
+        <div class="pro-banner-offer-text-secondary" style="margin-top:10px">Get <span class="blue-color">C++ (English)</span> course for <span class="pro-banner-offer-secondary-span blue-color"><i class="fa fa-inr" style="font-size: 15px" aria-hidden="true"></i><span style="font-size: 18px">999</span></span></div>
+        <!-- <div class="pro-banner-offer-text" style="margin-top:10px">Ending in:</div> -->
+      </div>
+        <div id="countdown">
+          <ul>
+            <li><span id="days">-295</span>Days</li>
+            <li><span id="hours">-12</span>Hours</li>
+            <li><span id="minutes">-13</span>Min</li>
+            <li><span id="seconds">-4</span>Sec</li>
+          </ul>
+        </div>
+      </a>
+    </div>
+
+    <!-- Secondary banner -->
+    <div class="pro-side-banner-secondary">
+      <a href="https://pro.codesdope.com/" target="_blank" class="text-decoration-none">
+        <div class="upper-wrapper">
+          <div class="pro-side-banner-secondary-child1">
+            Pro Course Features
+            <div class="underline"></div>
+          </div>
+          <div class="pro-banner-body">
+            <div class="pro-banner-body-list">
+              <span class="list-icon"><i class="fa fa-video-camera" aria-hidden="true"></i></span>
+              <span class="list-text"><span class="pro-banner-list-span">Simple</span> Videos</span>
+            </div>
+            <div class="pro-banner-body-list">
+              <span class="list-icon"><i class="fa fa-pencil" aria-hidden="true"></i></span><span class="list-text"><span class="pro-banner-list-span">Questions</span> to
+                Practice</span>
+            </div>
+            <div class="pro-banner-body-list">
+              <span class="list-icon"><i class="fa fa-check"></i></span><span class="list-text"><span class="pro-banner-list-span">Solved</span> 
+                Examples</span>
+            </div>
+            <div class="pro-banner-body-list">
+              <span class="list-icon"><i class="fa fa-graduation-cap" aria-hidden="true"></i></span><span class="list-text"><span class="pro-banner-list-span">Internship</span> Chance*
+              </span>
+            </div>
+            <div class="pro-banner-body-list">
+              <span class="list-icon"><i class="fa fa-certificate" aria-hidden="true"></i></span><span class="list-text"><span class="pro-banner-list-span">Certificate</span> of
+                Completion</span>
+            </div>
+            <div class="pro-banner-body-list">
+              <span class="list-icon"><i class="fa fa-comments" aria-hidden="true"></i></span><span class="list-text"><span class="pro-banner-list-span">Discussion</span> with
+                Experts</span>
+            </div>
+          </div>
+        </div>
+        <div class="pro-banner-off-wrapper">
+          Learn for <span class="pro-off-text">FREE</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+
+		<div class="course_ques">
+			<table id="ques_table">
+				<tbody><tr>
+					<th>
+						New Questions
+					</th>
+				</tr>
+				
+				<tr><td>
+					<a href="https://www.codesdope.com/discussion/looking-for-a-reliable-casino" target="_blank"><div>Looking for a reliable casino<span style="float:right;clear:both;"> - Other</span></div></a>
+				</td></tr>
+				
+				<tr><td>
+					<a href="https://www.codesdope.com/discussion/home-repairs" target="_blank"><div>Home repairs<span style="float:right;clear:both;"> - Other</span></div></a>
+				</td></tr>
+				
+				<tr><td>
+					<a href="https://www.codesdope.com/discussion/arnings-on-the-internet" target="_blank"><div>Еarnings on the Internet<span style="float:right;clear:both;"> - Cpp</span></div></a>
+				</td></tr>
+				
+				<tr><td>
+					<a href="https://www.codesdope.com/discussion/what-is-the-life-cycle-of-procurement" target="_blank"><div>What is the life cycle of procurement?<span style="float:right;clear:both;"> - Other</span></div></a>
+				</td></tr>
+				
+				<tr><td>
+					<a href="https://www.codesdope.com/discussion/shop-for-food-in-one-of-the-big-supermarkets" target="_blank"><div>Shop for food in one of the big supermarkets<span style="float:right;clear:both;"> - Perl</span></div></a>
+				</td></tr>
+				
+				<tr><td>
+					<a href="https://www.codesdope.com/discussion/r11waqq45pranjal" target="_blank"><div>r1=[1,'waqq',45,'pranjal']?<span style="float:right;clear:both;"> - Python</span></div></a>
+				</td></tr>
+				
+				<tr><td>
+					<a href="https://www.codesdope.com/discussion/lets-talk-about-sports-betting" target="_blank"><div>Let's talk about sports betting?<span style="float:right;clear:both;"> - Other</span></div></a>
+				</td></tr>
+				
+			</tbody></table>
+		</div>
+		<div style="text-align:center;">
+		<a class="below_ques" href="https://www.codesdope.com/add_question/" target="_blank">
+			<div>Ask Yours</div>
+		</a>
+		</div>
+
+
+
+<!-- 3 icons -->
+<div id="icons">
+  <ul>
+    <li>
+      <a class="fa-stack fa-lg" href="https://www.codesdope.com/discussion/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="DISCUSSION">
+        <i class="fa fa-square-o fa-stack-2x"></i>
+        <i class="fa fa-comments fa-stack-1x"></i>
+      </a>
+    </li>
+    <li>
+      <a class="fa-stack fa-lg" href="https://www.codesdope.com/practice/" target="_blank" style="margin-left:5px;" data-toggle="tooltip" data-placement="bottom" title="PRACTICE">
+        <i class="fa fa-pencil-square-o fa-2x"></i>
+      </a>
+    </li>
+    <li>
+      <a class="fa-stack fa-lg" href="https://codesdope-media.nyc3.cdn.digitaloceanspaces.com/prod/media/pdf/ASCII.pdf" target="_blank" style="margin-left:5px;" data-toggle="tooltip" data-placement="bottom" title="ASCII Table">
+        <i class="fa fa-square-o fa-stack-2x"></i>
+        <i class="fa fa-file-pdf-o fa-stack-1x"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!--
+side social icons
+-->
+<div id="social-buttons">
+  <ul>
+    <li id="li_facebook">
+      <a rel="noopener" aria-label="Facebook" href="https://www.facebook.com/codesdope/" target="_blank"><i class="fa fa-facebook"></i></a>
+    </li>
+    <li id="li_twitter">
+      <a rel="noopener" aria-label="Twitter" href="https://twitter.com/CodesDope" target="_blank"><i class="fa fa-twitter"></i></a>
+    </li>
+    <li id="li_linkedin">
+      <a rel="noopener" aria-label="Linkedin" href="https://www.linkedin.com/company/codesdope" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    </li>
+  </ul>
+</div>
+
+			
+            <div class="website_recent container-fluid">
+				<div class="recent_web">Recent Posts</div>
+				
+				<a href="https://www.codesdope.com/blog/article/pow-in-python/" target="_blank">
+					<div class="web_recent">
+						<div class="web_img">
+							<img src="https://codesdope-media.nyc3.cdn.digitaloceanspaces.com/prod/media/blog_images/2950/blog_cover_pics/article_2950_small.jpeg" alt="pow() in Python">
+						</div>
+						<div class="web_title">
+							<span>pow() in Python</span>
+						</div>
+					</div>
+				</a>
+				
+				<a href="https://www.codesdope.com/blog/article/dutch-national-flag-algorithm/" target="_blank">
+					<div class="web_recent">
+						<div class="web_img">
+							<img src="https://codesdope-media.nyc3.cdn.digitaloceanspaces.com/prod/media/blog_images/2946/blog_cover_pics/article_2946_small.jpeg" alt="Dutch National Flag problem - Sort 0, 1, 2 in an array">
+						</div>
+						<div class="web_title">
+							<span>Dutch National Flag problem - Sort 0, 1, 2 in an array</span>
+						</div>
+					</div>
+				</a>
+				
+				<a href="https://www.codesdope.com/blog/article/memoryview-in-python/" target="_blank">
+					<div class="web_recent">
+						<div class="web_img">
+							<img src="https://codesdope-media.nyc3.cdn.digitaloceanspaces.com/prod/media/blog_images/2936/blog_cover_pics/article_2936_small.jpeg" alt="memoryview() in Python">
+						</div>
+						<div class="web_title">
+							<span>memoryview() in Python</span>
+						</div>
+					</div>
+				</a>
+				
+				<a href="https://www.codesdope.com/blog/article/next-in-python/" target="_blank">
+					<div class="web_recent">
+						<div class="web_img">
+							<img src="https://codesdope-media.nyc3.cdn.digitaloceanspaces.com/prod/media/blog_images/2934/blog_cover_pics/article_2934_small.jpeg" alt="next() in Python">
+						</div>
+						<div class="web_title">
+							<span>next() in Python</span>
+						</div>
+					</div>
+				</a>
+				
+
+			</div>
+      <div style="text-align:center;">
+        <a class="below_recent" href="https://www.codesdope.com/blog/submit-article/" target="_blank">
+            <div>Post Yours</div>
+        </a>
+      </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ask question circle at bottom-right -->
+ <!--  <a href="/add_question/" target="_blank" id="doubt">
+    <i class="fa fa-question fa-stack-1x"></i><span>Doubt? Ask question</span>
+  </a> -->
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<footer class="container-fluid">
+    <div id="footer_up" class="row">
+
+        <!-- footer left -->
+        <div id="foot1" class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div id="footer_logo1">
+                <img class="footer_img" src="./Practice questions of Cpp - Classes and objects_files/logo_foot.png" alt="codesdope logo" height="50">
+            </div>
+            <div id="footer_logo2">
+                <img class="footer_img" src="./Practice questions of Cpp - Classes and objects_files/codesdope_foot.png" alt="codesdope text">
+            </div>
+            <div id="footer_follow">FOLLOW US</div>
+            <div id="footer_icons">
+                <a rel="noopener" aria-label="Facebook" class="afacebook" href="https://www.facebook.com/codesdope" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a rel="noopener" aria-label="Twitter" class="atwitter" href="https://twitter.com/CodesDope" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a rel="noopener" aria-label="Pinterest" class="apinterest" href="https://www.pinterest.com/codesdope/" target="_blank"><i class="fa fa-pinterest"></i></a>
+                <a rel="noopener" aria-label="Linkedin" class="alinkedin" href="https://www.linkedin.com/company/codesdope" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <!-- footer middle -->
+        <div id="foot2" class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div id="footer_category">CATEGORIES</div>
+            <div id="footer_categories">
+              <div>
+                <a href="https://pro.codesdope.com/" target="_blank">PRO</a>
+            </div>
+                <div>
+                    <a href="https://www.codesdope.com/about/">ABOUT</a>
+                </div>
+                <div>
+                    <a href="https://www.codesdope.com/blog/">BLOG</a>
+                </div>
+                <div>
+                    <a href="https://www.codesdope.com/course/">COURSES</a>
+                </div>
+                <div>
+                    <a href="https://www.codesdope.com/practice/">PRACTICE</a>
+                </div>
+                <div>
+                    <a href="https://www.codesdope.com/discussion/">DISCUSSION</a>
+                </div>
+                <div>
+                    <a href="https://www.codesdope.com/terms-of-use/">TERMS OF USE</a>
+                </div>
+                <div>
+                    <a href="https://www.codesdope.com/privacy-policy/">PRIVACY POLICY</a>
+                </div>
+                <div>
+                    <a href="https://www.codesdope.com/contact-us/">CONTACT US</a>
+                </div>
+                <div>
+                  <a href="https://www.codesdope.com/advertise-with-us/">ADVERTISEMENT</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer right -->
+        <div id="foot3" class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <div id="footer_touch">KEEP IN TOUCH</div>
+            <div id="footer_contact">
+                <a href="mailto:help@codesdope.com"><i class="fa fa-envelope-o"></i><span>help@codesdope.com</span></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer bottom -->
+    <div id="footer_down">
+        © | <a href="https://www.codesdope.com/">www.<span itemprop="author" itemscope="" itemtype="http://schema.org/Person"><span itemprop="name">codesdope</span>.com</span></a> | All rights reserved.
+    </div>
+</footer>
+<style>
+footer {
+  background-color: var(--main-bg-color7);
+  font-family: var(--main-font2);
+  margin-top: 40px;
+}
+#footer_up {
+  padding: 45px 20px 65px;
+  text-align: center;
+}
+#foot1 {
+  margin-top: 40px;
+}
+#foot2 {
+  margin-top: 40px;
+}
+#foot3 {
+  margin-top: 40px;
+}
+
+/* footer left */
+
+#footer_logo2 {
+  margin-top: 8px;
+}
+#footer_logo3 {
+  margin-top: 7px;
+}
+#footer_follow {
+  margin-top: 25px;
+  font-size: 13px;
+  color: var(--main-color5);
+  letter-spacing: 2px;
+  word-spacing: 2px;
+}
+#footer_icons {
+  margin-top: 10px;
+}
+#footer_icons a {
+  margin: 5px;
+  color: var(--main-color6);
+  font-size: 20px;
+}
+.afacebook:hover i,
+.afacebook:focus i {
+  color: #3b5998;
+}
+.atwitter:hover i,
+.atwitter:focus i {
+  color: #55acee;
+}
+.apinterest:hover i,
+.apinterest:focus i {
+  color: #cc2127;
+}
+.alinkedin:hover i,
+.alinkedin:focus i {
+  color: #0077b5;
+}
+.agoogle:hover i,
+.agoogle:focus i {
+  color: #dd4b39;
+}
+
+/* footer middle */
+
+#footer_category {
+  font-size: 13px;
+  color: var(--main-color5);
+  letter-spacing: 2px;
+  word-spacing: 2px;
+}
+#footer_categories {
+  margin-top: 18px;
+}
+#footer_categories a {
+  color: var(--main-color6);
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+#footer_categories a:hover,
+#footer_categories a:focus {
+  color: var(--main-color7);
+}
+
+/* footer right */
+
+#footer_touch {
+  font-size: 13px;
+  color: var(--main-color5);
+  letter-spacing: 2px;
+  word-spacing: 2px;
+}
+#footer_contact {
+  margin-top: 2px;
+}
+#footer_contact a {
+  display: block;
+  margin-top: 20px;
+  color: var(--main-color6);
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+#footer_contact span {
+  margin-left: 17px;
+}
+#footer_contact i,
+#footer_contact i {
+  color: #8f8f8f;
+}
+
+/* footer bottom */
+
+#footer_down {
+  background-color: var(--main-bg-color8);
+  color: #dbdbdb;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+#footer_down a {
+  color: #dbdbdb;
+}
+.footer_img {
+  margin-left: 0;
+}
+</style>
+</div>
+
+
+<script src="./Practice questions of Cpp - Classes and objects_files/jquery.min.js.download"></script>
+<script src="./Practice questions of Cpp - Classes and objects_files/bootstrap.min.js.download"></script>
+<script src="./Practice questions of Cpp - Classes and objects_files/jquery-ui.min.js.download"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-79240920-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '719565291712594');
+  fbq('track', 'PageView');
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=719565291712594&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- DO NOT MODIFY -->
+<!-- Quora Pixel Code (JS Helper) -->
+<script>
+  !function(q,e,v,n,t,s){if(q.qp) return; n=q.qp=function(){n.qp?n.qp.apply(n,arguments):n.queue.push(arguments);}; n.queue=[];t=document.createElement(e);t.async=!0;t.src=v; s=document.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s);}(window, 'script', 'https://a.quora.com/qevents.js');
+  qp('init', 'c91556d740e147559dd8c63f179fe4c6');
+  qp('track', 'ViewContent');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://q.quora.com/_/ad/c91556d740e147559dd8c63f179fe4c6/pixel?tag=ViewContent&noscript=1"/></noscript>
+<!-- End of Quora Pixel Code -->
+
+<!--Quora-->
+<script>qp('track', 'Generic');</script>
+
+
+
+<!--EU Cookie Consent-->
+<link rel="stylesheet" type="text/css" href="./Practice questions of Cpp - Classes and objects_files/cookieconsent.min.css">
+<script src="./Practice questions of Cpp - Classes and objects_files/cookieconsent.min.js.download"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000000",
+      "text": "#ffffff"
+    },
+    "button": {
+      "background": "#ffffff",
+      "text": "#000000"
+    }
+  },
+  "theme": "edgeless",
+  "content": {
+    "href": "https://www.codesdope.com/privacy-policy/"
+  }
+})});
+</script>
+<script src="./Practice questions of Cpp - Classes and objects_files/normal_base.js.download"></script>
+
+<script src="./Practice questions of Cpp - Classes and objects_files/topic_questions.js.download"></script>
+
+
+
+<ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled"><div id="aswift_3_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"><iframe id="aswift_3" name="aswift_3" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./Practice questions of Cpp - Classes and objects_files/ads(3).html" data-google-container-id="a!4" data-load-complete="true"></iframe></div></ins><div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative;"><iframe title="recaptcha challenge expires in two minutes" src="./Practice questions of Cpp - Classes and objects_files/bframe.html" name="c-xr8zv9j2snp9" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" style="width: 100%; height: 100%;"></iframe></div></div></body><iframe id="google_esf" name="google_esf" src="./Practice questions of Cpp - Classes and objects_files/zrt_lookup.html" style="display: none;"></iframe><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
